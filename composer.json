@@ -1,0 +1,19 @@
+{
+    "name": "svengerlach/flake",
+    "description": "Library that helps to generate unique 64 bit integers (for e.g. distributed id generation)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sven Gerlach",
+            "email": "sven.gerlach@qmarketing.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Svengerlach\\Flake\\": "src/"
+        }
+    }, 
+    "minimum-stability": "stable",
+    "require": {}
+}
