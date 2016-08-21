@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit
+        bootstrap="./tests/bootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnFailure="false"
+>
+    <testsuites>
+        <testsuite name="Flake Test Suite">
+            <file>./tests/TimerTest.php</file>
+            <file>./tests/SequencerTest.php</file>
+            <file>./tests/GeneratorTest.php</file>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+            <directory>./tests</directory>
+        </blacklist>
+    </filter>
+</phpunit>

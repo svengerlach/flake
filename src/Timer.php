@@ -6,12 +6,11 @@ class Timer implements TimerInterface
 {
 
     /**
-     * @return float
+     * @return integer
      */
     public function getMilliseconds()
     {
-        return floor(microtime(true) * 1000);
+        return (int) floor(microtime(true) * 1000);
     }
-
 
 }
